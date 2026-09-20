@@ -1,0 +1,2 @@
+fecha,socio,tipo_aportacion,concepto,importe_eur,forma,justificante,pendiente_de_devolucion_si_no,notas
+2026-01-01,Roberto,aportacion_capital,EJEMPLO - aportación inicial para importación Mustang 1,20000.00,transferencia_bancaria,,no,FILA DE EJEMPLO - borrar o sustituir. tipo_aportacion puede ser: aportacion_capital (a fondo perdido/ampliación) o prestamo_socio (hay que devolverlo)

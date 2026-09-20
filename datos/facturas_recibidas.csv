@@ -1,0 +1,2 @@
+num_factura,fecha_emision,proveedor,nif_proveedor,linea_negocio,categoria_gasto,concepto,base_imponible_eur,tipo_iva_pct,cuota_iva_eur,total_eur,fecha_vencimiento,pagada_si_no,fecha_pago,archivo_pdf,notas
+EJEMPLO-001,2026-01-05,Seguros ABC,A00000000,alquiler_vehiculos,seguro,Seguro furgoneta 1 - enero,80.00,21,16.80,96.80,2026-01-15,si,2026-01-10,,FILA DE EJEMPLO - borrar o sustituir por datos reales

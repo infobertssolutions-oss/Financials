@@ -1,0 +1,2 @@
+vehiculo_id,marca_modelo,matricula,tipo,origen,fecha_adquisicion,coste_compra_eur,gastos_aduana_importacion_eur,gastos_matriculacion_impuestos_eur,gastos_transporte_eur,otros_gastos_eur,coste_total_eur,aportado_por,estado_actual,fecha_baja_venta,importe_venta_eur,notas
+V1,EJEMPLO Ford Mustang,----,mustang,importacion_dubai,2025-01-01,40000.00,5000.00,6000.00,1500.00,500.00,53000.00,Roberto,en_alquiler,,,FILA DE EJEMPLO - borrar o sustituir. Rellenar 1 fila por cada uno de los 4 vehiculos (2 furgonetas + 2 Mustang)

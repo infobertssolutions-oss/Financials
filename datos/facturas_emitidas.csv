@@ -1,0 +1,2 @@
+num_factura,fecha_emision,cliente,nif_cliente,linea_negocio,concepto,base_imponible_eur,tipo_iva_pct,cuota_iva_eur,total_eur,fecha_vencimiento,cobrada_si_no,fecha_cobro,archivo_pdf,notas
+EJEMPLO-001,2026-01-15,Empresa Cliente SL,B00000000,alquiler_vehiculos,Alquiler mensual furgoneta enero,500.00,21,105.00,605.00,2026-01-31,si,2026-01-20,,FILA DE EJEMPLO - borrar o sustituir por datos reales
