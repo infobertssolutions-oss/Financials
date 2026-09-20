@@ -42,6 +42,22 @@ Pero los contratos de arrendamiento que habéis firmado ceden el vehículo a ter
 
 ## 2. Dinero que se ha perdido o se está escapando
 
+### 2.0. El presupuesto del Mustang Blanco: tres avisos antes de pagarlo
+
+*Presupuesto TA 26/1.373 de Jorge Vallejo Medina (02226244M), de 02/07/2026, aportado el 20/09/2026. Archivado en `documentos/vehiculos/`.*
+
+Importe: **5.097,05 €** (base 4.212,44 € + IVA 884,61 €). Decisión tomada por los socios: **reparar y vender** el vehículo, no incorporarlo a la flota.
+
+**1. Está a nombre de Norberto, persona física.** El presupuesto va a "NORBERTO DE RODRIGO, 05299366M". Si la factura sale así, la sociedad **pierde 884,61 € de IVA deducible** y no puede computar el gasto. Hay que pedirlo a nombre de **Berts Solutions SL, B23928419** — el mismo taller ya factura correctamente a la SL (factura TA 26/1.432 del 18/09/2026 del NV200).
+
+**2. Dice "PRESUPUESTO ABIERTO" y está caducado.** El propio documento indica validez de 15 días desde el 02/07/2026: venció a mediados de julio. "Abierto" significa que el importe final puede subir sin nuevo acuerdo. Hay que pedir presupuesto **nuevo y cerrado**.
+
+**3. No es una sustitución de motor: es una reparación de culata con rectificado de bloque.** Las partidas son comprobación de estanqueidad y planificado de culata, rectificado de asientos y válvulas, juego de juntas, rectificado del bloque (400 €), bomba de agua, bujías, correas, termostato, batería y 31 horas de mano de obra a 53 €/h.
+
+Falta algo llamativo: **si se rectifica el bloque, hacen falta pistones y segmentos de sobremedida, y casquillos de biela y bancada.** No están presupuestados. Y los dos diagnósticos previos hablaban de *"daños internos en motor, se aconseja sustituir"*, no de reparar la culata. Conviene preguntar al taller por qué discrepa de esos diagnósticos y qué pasa si al abrir el bloque aparecen los cilindros dañados: ahí es donde los 5.097 € se convierten en 7.000 u 8.000 €.
+
+Detalles menores: hay 100 € de *"pintar tapa de balancines (rojo)"* que, en un coche que se va a vender, no aportan nada. Y la garantía legal que el propio taller imprime en sus facturas es de **tres meses o 2.000 km**, lo que para un motor recién abierto es poco: conviene negociarla por escrito y que sea transferible al comprador.
+
 ### 2.1. El Ford Fiesta: −3.720 € en tres meses
 
 | Concepto | Fecha | Importe |
