@@ -1,0 +1,9 @@
+# Certificados digitales y claves privadas: NUNCA se suben al repositorio
+*.p12
+*.pfx
+*.key
+*.pem
+
+# Archivos temporales del sistema
+.DS_Store
+__MACOSX/

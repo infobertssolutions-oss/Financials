@@ -1,60 +1,72 @@
 # Qué necesitamos que nos facilitéis
 
-Este sistema ya tiene la estructura lista, pero está vacío/con ejemplos de plantilla. Para que empiece a reflejar la realidad de Berts Solutions y sea útil desde ya, necesitamos que nos paséis lo siguiente. No hace falta todo de golpe: id mandando lo que tengáis a mano y lo vamos incorporando.
+Actualizado tras la revisión del 20/09/2026 de los dos ZIP que mandasteis. Lo que ya está resuelto aparece tachado; lo que falta, marcado.
+
+Los hallazgos de esa revisión están en **[`HALLAZGOS.md`](HALLAZGOS.md)** — leedlo primero, hay cosas urgentes.
 
 ## 1. Datos societarios básicos
 
-- [ ] CIF de Berts Solutions SL, fecha de constitución, capital social escriturado.
-- [ ] Confirmación: ¿el 50%/50% está reflejado en escritura/libro de socios, o solo es un acuerdo verbal entre Roberto y tú? (importante para las aportaciones de capital, ver `ASESORIA_INICIAL.md`).
-- [ ] Domicilio fiscal, epígrafes de IAE dados de alta (¿alquiler de vehículos sin conductor? ¿servicios a empresas, cuáles?).
-- [ ] Régimen de IVA (general) y de Impuesto de Sociedades. ¿Estáis en algún régimen especial?
+- [x] ~~CIF: **B23928419**, constituida el **10/10/2025** ante el notario Francisco López Colmenarejo, capital social **3.100 €**~~
+- [x] ~~50%/50% confirmado en la escritura y en el certificado de titularidad real del BBVA (Norberto de Rodrigo 50%, Roberto de Roa 50%)~~
+- [x] ~~Domicilio social: Calle Sierra de Atapuerca 21, Portal F, 2ºD, 28050 Madrid~~
+- [x] ~~Norberto dado de alta en RETA desde el 01/11/2025 (tarifa plana, base 950,98 €/mes)~~
+- [ ] **CNAE/IAE**: en el alta de autónomo figura CNAE 8299 "otras actividades de apoyo a las empresas". ¿Está la sociedad dada de alta en el **epígrafe de alquiler de vehículos sin conductor**? Si no, hay que darla de alta (modelo 036).
+- [ ] ¿Roberto cotiza también como autónomo o solo Norberto?
 
 ## 2. Datos de la gestoría (Fisama)
 
-- [ ] Últimas cuentas anuales presentadas (Balance + Cuenta de Pérdidas y Ganancias) de los últimos 1-2 ejercicios, si existen.
-- [ ] Últimos modelos 303 (IVA trimestral) presentados.
-- [ ] Último modelo 200 (Impuesto de Sociedades) si ya se ha presentado alguno.
-- [ ] Libro registro de facturas emitidas y recibidas que tenga la gestoría (para contrastar contra lo que vayamos metiendo aquí).
-- [ ] Extracto bancario de la cuenta de la empresa (al menos los últimos 6-12 meses) para poder cuadrar ingresos y gastos reales.
+- [x] ~~Balance y Cuenta de Resultados de 2025~~
+- [ ] **Modelos 303 (IVA) ya presentados** de 2026 (T1 y T2), para contrastarlos con nuestros cálculos.
+- [ ] **Modelo 200** (Impuesto de Sociedades) de 2025, si ya se presentó.
+- [ ] **Libro registro de facturas emitidas y recibidas** que tenga Fisama en 2026.
+- [ ] **Extractos bancarios del BBVA** (cuenta ES73 0182 2458 1902 0130 3686) desde enero de 2026. Es lo que más nos falta: sin ellos no podemos cuadrar lo que ha entrado y salido de verdad.
+- [ ] Respuesta de Fisama a las tres preguntas de `HALLAZGOS.md` (cuenta 118, impuesto de matriculación, amortización).
 
-## 3. Vehículos (los +80k€ invertidos)
+## 3. Vehículos
 
-Para cada uno de los 4 vehículos (2 furgonetas + 2 Mustang importados de Dubai), aunque ahora solo 2 estén en alquiler:
+- [x] ~~NV200 **1370KGF**: comprado a Roberto por 3.800 € el 27/02/2026, ITP 152,64 €~~
+- [x] ~~Ford Fiesta **4161JHF**: comprado por 5.800 € y vendido por 2.480 € el 08/06/2026~~
+- [x] ~~Mustang Blanco (bastidor 1FATP8UH3K5179475): importación, aduana y matriculación documentadas~~
+- [x] ~~Mustang Gris (bastidor 1FATP8UH3M5120865): DUA, aranceles e IVA de importación documentados~~
+- [ ] 🔴 **FACTURA DE COMPRA DE LOS DOS MUSTANG** (proveedor ECOM HOLDING LLC FZ, Dubái). Es el documento más importante que falta: sin él no se puede activar ni amortizar el coste real.
+- [ ] 🔴 **TODA la documentación del NV200 2436KSS**: contrato de compraventa, factura, ITP, cuándo y a quién se compró.
+- [ ] ¿Se liquidó el **impuesto de matriculación (modelo 576)** de los Mustang? Si sí, el justificante.
+- [ ] ¿Se completó la **matrícula definitiva** del Mustang Blanco, o sigue con la placa temporal P7559BDR?
+- [ ] ¿En qué situación está el **Mustang Gris** ahora mismo: matriculado, parado, en venta?
+- [ ] Presupuesto de reparación del motor del Mustang Blanco (o tasación de venta como está).
 
-- [ ] Marca, modelo, matrícula (o nº de bastidor si aún no está matriculado).
-- [ ] Fecha de compra/importación.
-- [ ] Coste de compra (precio pagado en origen).
-- [ ] Gastos de importación y aduana (aranceles, IVA de importación, transporte internacional, agente de aduanas).
-- [ ] Gastos de matriculación en España: Impuesto Especial sobre Determinados Medios de Transporte ("impuesto de matriculación"), ITV, homologación/ficha reducida, tasas de tráfico.
-- [ ] Quién lo pagó y con qué dinero: ¿aportación de Roberto, aportación tuya, cuenta de la empresa, préstamo/financiación? (esto es clave para `aportaciones_capital.csv`).
-- [ ] Estado actual: en alquiler / parado / en venta / vendido.
-- [ ] Para los 2 vehículos que ya NO se alquilan: ¿qué se hizo con ellos? ¿se vendieron, están guardados, se usan para otra cosa?
+## 4. Facturación
 
-## 4. Negocio de alquiler de vehículos (línea 1)
+- [ ] 🔴 **Facturas emitidas de julio, agosto y septiembre de 2026.** En el ZIP no hay ninguna. Si de verdad no se ha facturado nada en tres meses, decidlo también, pero necesitamos saberlo antes del IVA de octubre.
+- [ ] **Facturas del T1 de 2026** (enero a marzo): tampoco hay ninguna emitida.
+- [ ] Facturas de los meses anteriores: decís que lleváis **+9 meses alquilando**, pero la primera factura que tengo es de abril de 2026. ¿Hubo facturación en 2025 por los alquileres?
+- [ ] **Mayo 2026**: la carpeta existe pero está vacía. ¿Se facturó a Cielo en mayo? (hay factura de abril y de junio, falta la de mayo).
+- [ ] Factura de **comisiones de Amovens** del trimestre (ahora solo tengo lo que descuentan en cada alquiler).
+- [ ] Aclarar el NIF de **David Chaves** y de **Adrián Díaz-Maroto**: ambos figuran con 50985746J.
+- [ ] ¿A qué furgoneta corresponde el alquiler de **David Chaves** (factura 10)?
+- [ ] ¿Por qué la factura de junio a Cielo es de 405 € y la de abril de 578,51 €?
 
-- [ ] Para los 9+ meses de alquiler: listado de lo cobrado cada mes por cada vehículo (aunque sea aproximado al principio).
-- [ ] Contratos de alquiler o acuerdo con quien alquila (¿empresas, particulares, plataformas tipo renting/carsharing?).
-- [ ] Gastos recurrentes por vehículo: seguro, mantenimiento, financiación/leasing (si hay cuota mensual), gestoría de multas, limpieza, etc.
-- [ ] Facturas emitidas por estos alquileres (para meter en `facturas_emitidas.csv`).
+## 5. Aportaciones de capital
 
-## 5. Negocio de servicios para empresas (línea 2)
+- [x] ~~Total aportado a 31/12/2025 según Fisama: **72.153,73 €** (cuenta 1180)~~
+- [ ] 🔴 **Desglose de cuánto ha puesto cada socio y en qué fechas**, con los justificantes de transferencia. Ahora mismo solo tenemos el total agregado y no sabemos si está 50/50.
+- [ ] Aportaciones hechas **durante 2026** (la cifra anterior es solo hasta el 31/12/2025).
+- [ ] Decisión sobre si esas aportaciones deben seguir como "a fondo perdido" o reclasificarse como préstamo de socio.
 
-- [ ] Qué tipo de servicio(s) concretos se van a ofrecer u ofrecen ya.
-- [ ] Si ya hay clientes o facturación: listado de facturas emitidas y clientes.
-- [ ] Estructura de costes prevista (¿subcontratáis, tenéis personal, es solo vosotros dos?).
+## 6. Seguros y contratos
 
-## 6. Aportaciones de capital y gastos de importación
-
-- [ ] Detalle de cuánto ha puesto cada socio (Roberto y tú) desde el inicio, con fechas.
-- [ ] Si alguna aportación fue en forma de préstamo del socio a la empresa (que se debe devolver) en vez de aportación a fondo perdido o ampliación de capital — esto cambia mucho el tratamiento fiscal y contable.
-- [ ] Justificantes de transferencias bancarias de estas aportaciones.
+- [x] ~~Pólizas de Mutua Madrileña de las dos furgonetas~~
+- [x] ~~Contratos de alquiler de Cielo Castillo y Ferney Morales~~
+- [ ] Póliza de los **Mustang** (¿están asegurados?).
+- [ ] **Contrato firmado de David Chaves** y del cliente "Enrique" (de junio solo hay fotos de la entrega).
+- [ ] Respuesta de Mutua sobre el cambio de uso de las pólizas a alquiler sin conductor.
 
 ## 7. Otros
 
-- [ ] ¿Hay empleados o solo trabajáis los dos socios?
-- [ ] ¿Hay algún préstamo bancario o financiación externa (leasing, renting, préstamo ICO, etc.) además de las aportaciones de los socios?
-- [ ] Facturas de gastos generales: alquiler de local/nave si hay, gestoría, seguros, suministros, etc.
+- [ ] Estado del **requerimiento de la AEAT** a nombre de Norberto (diligencia de embargo 282620862571R). ¿Se contestó?
+- [ ] ¿Hay algún **préstamo bancario o financiación** además de las aportaciones de los socios? (En el balance de 2025 no aparece ninguna deuda.)
+- [ ] Detalle de la **línea de servicios para empresas**: qué servicios, qué clientes, qué costes.
 
 ---
 
-**Cómo mandarlo**: puede ser en el formato que tengáis (Excel, PDF, fotos de facturas, extractos bancarios). Nosotros lo iremos volcando a los CSV de `/datos/` con el formato correcto. Si preferís, también podéis rellenar directamente los CSV vosotros mismos siguiendo las columnas que ya están creadas como plantilla — cuantos más datos reales metáis, antes podremos generar informes fiables y detectar si algo no cuadra con la gestoría.
+**Cómo mandarlo**: adjuntándolo aquí en la conversación, o subiéndolo a la carpeta `bandeja_entrada/` del repositorio. Lo que más desbloquea ahora mismo son los **extractos bancarios**, las **facturas de compra de los Mustang** y las **facturas emitidas de julio a septiembre**.
