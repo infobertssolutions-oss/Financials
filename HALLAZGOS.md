@@ -1,6 +1,6 @@
 # Hallazgos de la primera revisión documental
 
-**Fecha de la revisión:** 20/09/2026
+**Fecha de la revisión:** 20/09/2026 *(actualizado el 20/09/2026 con las aclaraciones de Norberto sobre los expedientes de Hacienda)*
 **Documentos revisados:** 90 archivos (escrituras, CIF, cuentas 2025 de Fisama, contratos de compraventa y alquiler, facturas de gastos e ingresos Q1–Q3 2026, documentación de importación de los dos Mustang, seguros).
 
 Todo lo que sigue sale de vuestros propios documentos. Cuando algo es una duda y no una certeza, lo digo expresamente.
@@ -62,11 +62,48 @@ La factura AEF2600355 de Amalgama Export incluye **697 € de demoras** y **250 
 
 En total **1.147 € en dos importaciones** que, con el papeleo preparado antes de que llegue el barco, se pueden reducir mucho. Si vais a seguir importando, esto es lo primero a corregir.
 
-### 2.3. Sanción de 286,38 € (y un embargo a nombre de Norberto)
+### 2.3. El embargo: el dinero ya se cobró, pero el recurso sigue abierto y con plazo
 
-- Sanción pagada el 14/09/2026 por 286,38 € (expediente de Algeciras).
-- **Ojo:** las sanciones **no son gasto deducible** en el Impuesto de Sociedades. Que no os la cuelen como gasto.
-- Además hay un **requerimiento de la AEAT a nombre personal de Norberto** (NIF 05299366M) por una diligencia de embargo, dentro de un recurso de reposición. Hacienda pide el justificante de pago de una multa. **Esto tiene plazo de 10 días hábiles**: si no está contestado ya, es urgente.
+*Documentado con el requerimiento original y el extracto del BBVA aportados el 20/09/2026. Todo esto está en `documentos/hacienda/`.*
+
+Son **dos expedientes distintos** que no tienen nada que ver entre sí:
+
+| | Multa de tráfico | Sanción de la AEAT |
+|---|---|---|
+| Expediente de origen | DGT **28/049507985/5** (línea discontinua) | **282615500164R** |
+| Referencia del cobro | Embargo **282620862571R** | Modelo 010, pago con tarjeta |
+| Obligado al pago | **Norberto, a título personal** (05299366M) | **Berts Solutions SL** (B23928419) |
+| Importe | 239,54 € | 286,38 € |
+| Cuándo y de dónde | 24/08/2026, embargo sobre la cuenta **personal** ES47 0182 ****9640 | 14/09/2026, 18:52 |
+| Estado | Cobrado, **pero con recurso abierto** | Pagado y cerrado |
+
+**Lo que no está cerrado.** Norberto recurrió el embargo en reposición (recurso nº 2026GRC99360123ARGE434053662026), alegando que esa multa ya estaba pagada. La Dependencia Regional de Recaudación de Madrid le contestó el **01/09/2026** (documento 2026GRT03460139H, CSV EVTLEH3WA3WZZVXD) con un **requerimiento de documentación** que dice literalmente:
+
+> *"En la presentación del recurso se hace referencia al justificante de pago de la multa, no obstante, no se adjunta en los documentos. (...) se le requiere para que remita a esta oficina (...) Justificante de pago de la deuda donde conste el cargo del pago y la fecha del mismo."*
+
+**Plazo: 10 días hábiles desde el día siguiente a la recepción.** Como el escrito se firmó el 01/09/2026, el plazo está o bien a punto de vencer o bien recién vencido, según la fecha exacta de notificación. Hay que entrar en la sede de la AEAT y comprobar esa fecha.
+
+**Cuidado con qué se manda.** Lo que pide Hacienda es el justificante del pago **anterior** de la multa — el cargo, con su fecha, que demuestre que estaba pagada antes de que llegara el embargo. No sirven ninguno de estos dos:
+
+- El extracto del BBVA del 24/08/2026: eso documenta el embargo en sí, no un pago previo. Es precisamente el acto que se está recurriendo.
+- El justificante de los 286,38 €: es otro expediente, otro deudor (la SL, no Norberto) y una fecha posterior.
+
+**Qué pasa si ese pago previo no existe.** Entonces el recurso no tiene recorrido y se desestimará: la multa se da por cobrada vía embargo y ahí acaba todo. No hay sanción añadida por no contestar un requerimiento de este tipo. El coste máximo de no hacer nada son los 239,54 €, ya pagados. Pero si el pago sí existió, es dinero cobrado dos veces y se recupera como devolución de ingresos indebidos.
+
+**La sanción de 286,38 € sí la pagó la sociedad y no es gasto deducible** en el Impuesto de Sociedades: es un ajuste extracontable positivo en el modelo 200. Que no se cuele como gasto corriente.
+
+**El aprendizaje real no es la multa, es el circuito.** Esa multa recorrió notificación, plazo voluntario (con 50% de descuento), providencia de apremio (+20% de recargo) y embargo sin que nadie la viera. Costó del orden de 140 € de más. Con vehículos alquilados a terceros esto se va a repetir: ver el punto 2.4.
+
+### 2.4. No hay circuito para las multas de los vehículos alquilados
+
+Como titular de los vehículos, la sociedad **está obligada a identificar al conductor en 20 días naturales** (art. 11 de la Ley de Tráfico). Si no se identifica, la sanción por no identificar va **de 2 a 6 veces el importe de la multa original**, y esa recae sobre la empresa sin posibilidad de repercutirla.
+
+Estado de los contratos revisados:
+
+- **Ferney Morales** (modelo nuevo): correcto. Incluye responsabilidad solidaria por *"multas, sanciones, daños, penalizaciones"* y prevé expresamente el caso de que el conductor real sea distinto del identificado.
+- **Cielo Castillo** (02/12/2025): no he podido verificarlo, el PDF está escaneado como imagen. Si es el modelo antiguo y no lleva esa cláusula, conviene renovarlo.
+
+Lo que hace falta: revisar la dirección de notificaciones de la DGT (darse de alta en la **Dirección Electrónica Vial**, que es gratuita y evita depender del correo postal) y tener el reflejo de identificar al arrendatario en cuanto llegue una multa.
 
 ---
 
