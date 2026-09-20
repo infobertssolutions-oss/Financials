@@ -1,2 +1,0 @@
-mes,vehiculo_id,cliente_arrendatario,ingreso_bruto_eur,gastos_seguro_eur,gastos_mantenimiento_eur,gastos_financiacion_eur,gastos_otros_eur,ingreso_neto_eur,factura_num,cobrado_si_no,notas
-2026-01,V1,EJEMPLO Cliente SL,500.00,80.00,0.00,0.00,0.00,420.00,EJEMPLO-001,si,FILA DE EJEMPLO - borrar o sustituir. Una fila por vehiculo y mes

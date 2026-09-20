@@ -34,6 +34,20 @@ def num(fila, campo):
         return 0.0
 
 
+def mes_de(fila, campo_fecha="fecha_emision"):
+    fecha = fila.get(campo_fecha) or ""
+    return fecha[:7] if len(fecha) >= 7 else "sin_fecha"
+
+
+def trimestre_de(fila, campo_fecha="fecha_emision"):
+    mes = mes_de(fila, campo_fecha)
+    if mes == "sin_fecha":
+        return "sin_fecha"
+    anio, mm = mes.split("-")
+    t = (int(mm) - 1) // 3 + 1
+    return f"{anio}-T{t}"
+
+
 def cabecera(titulo):
     return (
         f"# {titulo}\n\n"
@@ -72,9 +86,15 @@ def generar_cuenta_resultados():
                 out += f"| {linea} | {i:,.2f} | {g:,.2f} | {i - g:,.2f} |\n"
             out += "\n"
 
-        def mes_de(fila):
-            fecha = fila.get("fecha_emision") or ""
-            return fecha[:7] if len(fecha) >= 7 else "sin_fecha"
+        trimestres = sorted({trimestre_de(f) for f in ing} | {trimestre_de(f) for f in gas})
+        if trimestres:
+            out += "## Por trimestre\n\n"
+            out += "| Trimestre | Ingresos € | Gastos € | Resultado € |\n|---|---|---|---|\n"
+            for t in trimestres:
+                i = sum(num(f, "base_imponible_eur") for f in ing if trimestre_de(f) == t)
+                g = sum(num(f, "base_imponible_eur") for f in gas if trimestre_de(f) == t)
+                out += f"| {t} | {i:,.2f} | {g:,.2f} | {i - g:,.2f} |\n"
+            out += "\n"
 
         meses = sorted({mes_de(f) for f in ing} | {mes_de(f) for f in gas})
         if meses:
@@ -92,53 +112,54 @@ def generar_iva():
     ing = leer("facturas_emitidas.csv")
     gas = leer("facturas_recibidas.csv")
 
-    out = cabecera("IVA repercutido vs soportado (orientativo)")
-    out += "Esto es una estimación para contrastar con el modelo 303 que presente la gestoría, no sustituye la declaración oficial.\n\n"
+    out = cabecera("IVA repercutido vs soportado, por trimestre")
+    out += (
+        "Esto es una estimación para contrastar con el modelo 303 que presente la gestoría "
+        "(el IVA en España se liquida por trimestres), no sustituye la declaración oficial.\n\n"
+    )
 
     if not ing and not gas:
         out += "Todavía no hay datos reales cargados.\n"
     else:
+        trimestres = sorted({trimestre_de(f) for f in ing} | {trimestre_de(f) for f in gas})
+        out += "| Trimestre | IVA repercutido € | IVA soportado € | A ingresar / (a compensar) € |\n|---|---|---|---|\n"
+        for t in trimestres:
+            rep = sum(num(f, "cuota_iva_eur") for f in ing if trimestre_de(f) == t)
+            sop = sum(num(f, "cuota_iva_eur") for f in gas if trimestre_de(f) == t)
+            out += f"| {t} | {rep:,.2f} | {sop:,.2f} | {rep - sop:,.2f} |\n"
+
         iva_repercutido = sum(num(f, "cuota_iva_eur") for f in ing)
         iva_soportado = sum(num(f, "cuota_iva_eur") for f in gas)
-        a_liquidar = iva_repercutido - iva_soportado
-        out += f"- **IVA repercutido (en facturas emitidas)**: {iva_repercutido:,.2f} €\n"
-        out += f"- **IVA soportado (en facturas recibidas)**: {iva_soportado:,.2f} €\n"
-        out += f"- **IVA a ingresar / (a compensar si es negativo)**: {a_liquidar:,.2f} €\n"
+        out += f"\n**Total acumulado**: repercutido {iva_repercutido:,.2f} € — soportado {iva_soportado:,.2f} € — diferencia {iva_repercutido - iva_soportado:,.2f} €\n"
 
     (INFORMES / "iva.md").write_text(out, encoding="utf-8")
 
 
 def generar_rentabilidad_vehiculos():
-    alq = leer("alquileres_vehiculos.csv")
+    ing = [f for f in leer("facturas_emitidas.csv") if f.get("vehiculo_id")]
+    gas = [f for f in leer("facturas_recibidas.csv") if f.get("vehiculo_id")]
     inv = leer("inversiones_vehiculos.csv")
 
     out = cabecera("Rentabilidad por vehículo")
+    out += "Se calcula a partir de las facturas emitidas/recibidas que tienen `vehiculo_id` relleno.\n\n"
 
-    if not alq:
-        out += "Todavía no hay datos reales en `alquileres_vehiculos.csv`.\n"
+    if not ing and not gas:
+        out += "Todavía no hay facturas con `vehiculo_id` relleno.\n"
     else:
-        resumen = defaultdict(lambda: {"bruto": 0.0, "neto": 0.0, "meses": set()})
-        for f in alq:
-            vid = f.get("vehiculo_id", "")
-            r = resumen[vid]
-            r["bruto"] += num(f, "ingreso_bruto_eur")
-            r["neto"] += num(f, "ingreso_neto_eur")
-            r["meses"].add(f.get("mes", ""))
+        vehiculos = sorted({f.get("vehiculo_id") for f in ing} | {f.get("vehiculo_id") for f in gas})
+        coste_por_vehiculo = {f.get("vehiculo_id"): num(f, "coste_total_eur") for f in inv}
+        nombre_por_vehiculo = {f.get("vehiculo_id"): f.get("marca_modelo", "") for f in inv}
 
-        out += "## Ingresos netos acumulados por vehículo\n\n"
-        out += "| Vehículo | Ingreso bruto € | Ingreso neto € | Meses registrados |\n|---|---|---|---|\n"
-        for vid, r in sorted(resumen.items()):
-            out += f"| {vid} | {r['bruto']:,.2f} | {r['neto']:,.2f} | {len(r['meses'])} |\n"
-
-        if inv:
-            out += "\n## Payback (recuperación de la inversión)\n\n"
-            out += "| Vehículo | Coste total invertido € | Ingreso neto acumulado € | % recuperado |\n|---|---|---|---|\n"
-            coste_por_vehiculo = {f.get("vehiculo_id"): num(f, "coste_total_eur") for f in inv}
-            for vid, r in sorted(resumen.items()):
-                coste_total = coste_por_vehiculo.get(vid)
-                if coste_total:
-                    pct = r["neto"] / coste_total * 100
-                    out += f"| {vid} | {coste_total:,.2f} | {r['neto']:,.2f} | {pct:,.1f}% |\n"
+        out += "## Ingresos, gastos y resultado por vehículo (acumulado)\n\n"
+        out += "| Vehículo | Ingresos € | Gastos € | Resultado € | Inversión € | % recuperado |\n|---|---|---|---|---|---|\n"
+        for vid in vehiculos:
+            i = sum(num(f, "base_imponible_eur") for f in ing if f.get("vehiculo_id") == vid)
+            g = sum(num(f, "base_imponible_eur") for f in gas if f.get("vehiculo_id") == vid)
+            resultado = i - g
+            coste = coste_por_vehiculo.get(vid)
+            pct = f"{(resultado / coste * 100):,.1f}%" if coste else "—"
+            nombre = nombre_por_vehiculo.get(vid, "")
+            out += f"| {nombre} ({vid}) | {i:,.2f} | {g:,.2f} | {resultado:,.2f} | {coste or 0:,.2f} | {pct} |\n"
 
     (INFORMES / "rentabilidad_vehiculos.md").write_text(out, encoding="utf-8")
 
