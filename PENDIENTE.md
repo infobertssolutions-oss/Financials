@@ -63,8 +63,7 @@ Los hallazgos de esa revisión están en **[`HALLAZGOS.md`](HALLAZGOS.md)** — 
 
 ## 7. Otros
 
-- [ ] 🔴 **Contestar el requerimiento de la AEAT** (documento 2026GRT03460139H, de 01/09/2026, recurso de reposición 2026GRC99360123ARGE434053662026). Piden el justificante del pago **previo** de la multa de tráfico. Plazo: 10 días hábiles desde la notificación → **comprobar hoy la fecha de notificación en la sede de la AEAT**
-- [ ] ¿Existe un **justificante de haber pagado la multa DGT 28/049507985/5 antes del 24/08/2026**? Es el único documento que sostiene el recurso
+- [x] ~~**Requerimiento de la AEAT** (2026GRT03460139H, recurso de reposición 2026GRC99360123ARGE434053662026): **Norberto decide no continuar con el recurso** el 20/09/2026. La multa ya está cobrada vía embargo y desistir no tiene coste adicional. El escrito queda redactado en `documentos/hacienda/BORRADOR_contestacion-requerimiento-2026GRT03460139H.md` por si se reconsidera~~
 - [x] ~~Embargo 282620862571R: cobrado el 24/08/2026, 239,54 €, de la cuenta **personal** de Norberto (ES47 0182 ****9640). No afecta a las cuentas de la empresa~~
 - [ ] Confirmar en la sede de la AEAT que **no queda saldo vivo** de ese embargo ni de la sanción de 286,38 €
 - [ ] ¿Hay algún **préstamo bancario o financiación** además de las aportaciones de los socios? (En el balance de 2025 no aparece ninguna deuda.)
