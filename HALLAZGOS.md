@@ -169,7 +169,32 @@ Puede tener explicación (un trámite fallido y otro correcto), pero **son 131 �
 - **Ticket de Repsol del 21/06/2026 (15,00 €)**: es un ticket, no una factura con vuestros datos fiscales. Sin factura no hay IVA deducible.
 - En dos tickets de combustible (Repsol 14/05 y E.S. Prat 15/05) el IVA impreso aparece como **10%**, cuando el combustible va al 21%. He calculado las bases al 21%, pero hay que verificarlo con las facturas reales.
 
-### 3.7. Tres meses sin facturar nada
+### 3.7. Los ingresos reales son muy superiores a los documentados
+
+*Actualizado el 20/09/2026 con lo que nos confirman los socios.*
+
+Las furgonetas están generando **900 €/mes una (desde hace unos tres meses) y 700 €/mes la otra (desde septiembre)**: un ritmo actual de **1.600 €/mes, 19.200 € anualizados**. Las facturas existen, pero no estaban en el ZIP que se revisó.
+
+Con lo documentado, todo el alquiler de 2026 suma **1.737,73 €** de base imponible. Al ritmo confirmado, eso es lo que se factura en cinco semanas. Faltan por aportar, como mínimo, **las facturas emitidas de julio, agosto y septiembre (~3.400 €)**, y hay que revisar también el primer trimestre.
+
+**Todas las conclusiones de rentabilidad de este informe están calculadas sin esos ingresos y, por tanto, se quedan cortas.** En particular, la afirmación de que ninguna de las dos furgonetas cubre sus gastos deja de ser cierta a 900 €/mes: a ese precio la furgoneta es rentable. Queda pendiente de recalcular en cuanto lleguen las facturas.
+
+### 3.8. Aviso sobre el IVA del tercer trimestre
+
+Con los ingresos confirmados, el T3 queda aproximadamente así:
+
+| | Importe |
+|---|---|
+| IVA repercutido (~3.400 € de alquileres) | ~590 € |
+| IVA soportado (sobre todo importación del Mustang Gris) | 3.312 € |
+| **Saldo a favor de la empresa** | **~2.720 €** |
+
+Dos cosas importantes:
+
+1. **Ese saldo no se cobra en octubre.** La devolución del IVA solo puede solicitarse en la autoliquidación del cuarto trimestre (que se presenta en enero), salvo que la empresa esté inscrita en el REDEME. En el modelo 303 del T3 se consigna como **"a compensar"**, y va descontándose de los trimestres siguientes.
+2. **No se puede presentar una declaración con saldo a favor omitiendo ingresos.** Es la combinación que más comprobaciones provoca. Las facturas de julio a septiembre tienen que estar dentro antes de presentar, plazo **20 de octubre**.
+
+### 3.9. Tres meses sin facturar nada (resuelto)
 
 En los documentos no hay **ninguna factura emitida en julio, agosto ni septiembre de 2026**, ni tampoco en el primer trimestre. Las únicas facturas de venta son de abril a junio.
 

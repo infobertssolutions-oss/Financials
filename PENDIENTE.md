@@ -37,7 +37,8 @@ Los hallazgos de esa revisión están en **[`HALLAZGOS.md`](HALLAZGOS.md)** — 
 
 ## 4. Facturación
 
-- [ ] 🔴 **Facturas emitidas de julio, agosto y septiembre de 2026.** En el ZIP no hay ninguna. Si de verdad no se ha facturado nada en tres meses, decidlo también, pero necesitamos saberlo antes del IVA de octubre.
+- [ ] 🔴 **Facturas emitidas de julio, agosto y septiembre de 2026** — confirmado que existen: una furgoneta a 900 €/mes desde hace ~3 meses y otra a 700 €/mes desde septiembre (~3.400 € en el trimestre). **Hacen falta antes del 20 de octubre** para presentar el modelo 303 del T3
+- [ ] Contratos vigentes de los dos arrendatarios actuales (los que pagan 900 € y 700 €)
 - [ ] **Facturas del T1 de 2026** (enero a marzo): tampoco hay ninguna emitida.
 - [ ] Facturas de los meses anteriores: decís que lleváis **+9 meses alquilando**, pero la primera factura que tengo es de abril de 2026. ¿Hubo facturación en 2025 por los alquileres?
 - [ ] **Mayo 2026**: la carpeta existe pero está vacía. ¿Se facturó a Cielo en mayo? (hay factura de abril y de junio, falta la de mayo).
