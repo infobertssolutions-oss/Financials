@@ -4,6 +4,8 @@ Sistema para que Roberto y tú llevéis vosotros mismos el control financiero de
 
 **👉 Empieza por [`GUIA_RAPIDA.md`](GUIA_RAPIDA.md) — ahí está explicado paso a paso qué meter, dónde, y cómo ver las cuentas por trimestre y mes.**
 
+**¿Solo quieres pasar información sin complicarte?** Adjunta fotos/PDFs/Excel directamente en la conversación, o súbelos a [`bandeja_entrada/`](bandeja_entrada/README.md) — Claude se encarga de clasificarlo y ordenarlo todo.
+
 ## Filosofía del sistema
 
 - **Sencillo**: todo son hojas de cálculo (`.csv`, se abren con Excel o Google Sheets) más una carpeta donde se guardan los PDF/fotos de las facturas.
@@ -17,6 +19,8 @@ Sistema para que Roberto y tú llevéis vosotros mismos el control financiero de
 GUIA_RAPIDA.md                ← EMPEZAR AQUÍ: qué meter, dónde y cuándo
 PENDIENTE.md                  ← Lo que necesitamos que nos facilitéis para tener datos reales
 ASESORIA_INICIAL.md           ← Primeras recomendaciones y riesgos a revisar
+
+/bandeja_entrada/              ← Sube aquí cualquier documento sin clasificar; Claude lo ordena
 
 /datos/                       ← Las hojas de cálculo donde se anota todo
     facturas_emitidas.csv     ← Facturas que emite Berts (ingresos)

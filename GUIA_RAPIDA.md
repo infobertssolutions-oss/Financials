@@ -2,6 +2,8 @@
 
 Solo hay **4 sitios** donde metéis información. El resto (informes, cuentas, IVA por trimestre) se calcula solo. Esta guía es el único documento que necesitáis tener a mano en el día a día.
 
+> **¿No quieres tocar los CSV tú mismo?** No hace falta. Adjunta la foto/PDF/Excel directamente en la conversación con Claude, o súbelo a la carpeta `bandeja_entrada/` (ver `bandeja_entrada/README.md`), y Claude lo clasifica, lo guarda y actualiza todo por ti.
+
 ---
 
 ## 1. Te llega una factura de un proveedor (gasto) → `datos/facturas_recibidas.csv`
