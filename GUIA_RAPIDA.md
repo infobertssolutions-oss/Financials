@@ -31,9 +31,9 @@ Cada vez que uno de los dos socios transfiere dinero a la cuenta de Berts (o apo
 1. Añade una fila: fecha, quién (Roberto o tú), importe, y **tipo**: ¿es `aportacion_capital` (se queda en la empresa) o `prestamo_socio` (la empresa te lo debe devolver)? Si no lo sabéis, dejadlo anotado en "notas" y lo revisamos con la gestoría — es importante no confundirlo.
 2. Guarda el justificante de la transferencia donde guardéis los documentos societarios (de momento puede ser junto a la factura relacionada, si la hay).
 
-## 4. Compráis, importáis o vendéis un vehículo → `datos/inversiones_vehiculos.csv`
+## 4. Compráis, importáis o vendéis un vehículo → `datos/vehiculos.csv`
 
-Esto se toca pocas veces (solo cuando entra o sale un vehículo de la flota). Una fila por vehículo, con el desglose: coste de compra, aduana/importación, matriculación/impuestos, transporte, quién lo pagó.
+Esto se toca pocas veces (solo cuando entra o sale un vehículo de la flota). Una fila por vehículo con el precio de compra, la fecha, **desde dónde se pagó** (banco de la empresa, un socio como préstamo o como aportación) y el % de amortización. Los gastos de aduana, ITP, gestoría y matriculación entran como facturas recibidas con cuenta `2180`, y se suman solos al coste del vehículo. La venta se registra como factura emitida con cuenta `2180`: el script calcula el beneficio o la pérdida.
 
 ---
 
@@ -46,24 +46,24 @@ Esto se toca pocas veces (solo cuando entra o sale un vehículo de la flota). Un
 Cada vez que queráis ver el estado de las cuentas (o pedídselo a Claude directamente: "genera los informes"):
 
 ```bash
-cd scripts
-python3 generar_informes.py
+python3 scripts/generar_informes.py
 ```
 
 Esto actualiza automáticamente, a partir de todo lo que hayáis metido:
 
-- **`informes/cuenta_resultados.md`** — ingresos, gastos y beneficio, agrupado por línea de negocio, **por trimestre y por mes**.
-- **`informes/iva.md`** — IVA repercutido vs soportado **por trimestre** (así lo contrastáis fácilmente con lo que la gestoría presenta en el modelo 303 cada trimestre).
-- **`informes/rentabilidad_vehiculos.md`** — cuánto gana o pierde cada vehículo, y qué % de lo invertido lleváis recuperado.
-- **`informes/balance_resumen.md`** — cuánto ha aportado cada socio y cuánto tenéis invertido en vehículos.
+- **`informes/Estados_Financieros_Berts.xlsx`**: el **Balance de Situación** y la **Cuenta de Pérdidas y Ganancias** (modelo oficial PGC Pymes, por trimestres), IVA, vehículos, libro diario y lista de pendientes. Ver [`ESTADOS_FINANCIEROS.md`](ESTADOS_FINANCIEROS.md).
+- **`informes/balance_situacion.md`** y **`informes/cuenta_perdidas_ganancias.md`**: lo mismo en texto, para leerlo desde el móvil.
+- **`informes/iva.md`**: IVA repercutido y soportado **por trimestre**, para contrastarlo con el modelo 303 de la gestoría.
+- **`informes/rentabilidad_vehiculos.md`**: coste, amortización y resultado de cada vehículo.
+- **`informes/avisos.md`**: lo que falta o no cuadra.
 
 No hace falta que sepáis nada de contabilidad para leerlos: son tablas con euros, listas de leer de arriba a abajo.
 
 ## Rutina recomendada
 
 - **Cada vez que pase algo** (llega/emitís una factura, entra dinero): metedlo en el momento, 2 minutos. Es lo que evita que se pierda o se acumule.
-- **Una vez al mes**: ejecutad los informes y echadle un vistazo rápido a `cuenta_resultados.md`.
-- **Cada trimestre** (antes de que la gestoría presente el IVA): revisad `iva.md` y comparadlo con lo que va a declarar Fisama. Si no coincide, es la señal de que falta meter alguna factura (vuestra o de ellos).
+- **Una vez al mes**: mandad el extracto del BBVA del mes y echad un vistazo a la hoja *Resumen* del Excel.
+- **Cada trimestre** (antes de que la gestoría presente el IVA): revisad la hoja *IVA* (o `iva.md`) y comparadla con lo que va a declarar Fisama. Si no coincide, es la señal de que falta meter alguna factura (vuestra o de ellos).
 
 ## Regla de oro
 

@@ -4,6 +4,24 @@ Actualizado tras la revisión del 20/09/2026 de los dos ZIP que mandasteis. Lo q
 
 Los hallazgos de esa revisión están en **[`HALLAZGOS.md`](HALLAZGOS.md)** — leedlo primero, hay cosas urgentes.
 
+## 0. Para cerrar el Balance y la Cuenta de PyG (lo más importante ahora)
+
+El balance ya está montado y cuadra (ver [`ESTADOS_FINANCIEROS.md`](ESTADOS_FINANCIEROS.md)), pero hay **24.498,06 € en «partidas pendientes de aplicación»** y la tesorería no está comprobada. Esto es lo que lo resuelve, por orden:
+
+- [ ] 🔴 **Extractos del BBVA de enero a septiembre de 2026** (PDF o Excel del banco, lo que sea más fácil). Con eso compruebo el saldo real y veo de dónde salió cada pago.
+- [ ] 🔴 **¿Desde dónde se pagó cada vehículo?** Para cada uno: ¿desde el BBVA de la empresa, o lo pagasteis vosotros de vuestro bolsillo? Si fue un socio: ¿la empresa os lo debe devolver (préstamo) o se queda en la empresa (aportación)?
+  - NV200 1370KGF: 3.800 € a Roberto. ¿Se le llegó a pagar?
+  - Ford Fiesta: 5.800 € a Ruth Serrano.
+  - Mustang Blanco y Mustang Gris: precio pagado a ECOM HOLDING (y la factura).
+- [ ] 🔴 **¿Se cobraron estas facturas, y cuándo?** 9 y 12 de Cielo (700 € y 490,05 €), 10 de David Chaves (700 €) y 11 de la venta del Fiesta a Adrián (3.000,80 €).
+- [ ] **Seguros de Mutua** (349,46 € y 291,49 €): ¿se cargaron en el BBVA y en qué fecha? Se renuevan el **23/10/2026**: mandad los recibos nuevos cuando lleguen.
+- [ ] **DUA del Mustang Blanco** (26ES000855I056M8R6): la factura AES2600140 de Amalgama (2.411,23 €) mezcla arancel e IVA de importación. Hay unos **~1.600 € de IVA deducible** que ahora están sumados al coste del coche.
+- [ ] **Modelos 303 de T1 y T2 presentados por Fisama** y justificante de pago del T2 (según nuestros datos salen 277,49 € a ingresar).
+- [ ] **Modelo 111 del T2**: la factura 26A900127 de la gestoría lleva una retención de 7,50 € que Berts tiene que ingresar en Hacienda. Las otras tres facturas de la misma gestoría **no** llevan retención y deberían.
+- [ ] **Acta de la Junta** que aprobó las cuentas de 2025 y cómo se repartió el resultado (64,88 €). He supuesto 10 % a reserva legal y el resto a remanente.
+- [ ] **Cuota de autónomos (RETA) de Norberto**: ¿la paga la empresa o él? Si la paga la empresa, es un gasto que ahora no aparece.
+- [ ] **Comisiones bancarias** del BBVA: salen en el extracto y todavía no están registradas.
+
 ## 1. Datos societarios básicos
 
 - [x] ~~CIF: **B23928419**, constituida el **10/10/2025** ante el notario Francisco López Colmenarejo, capital social **3.100 €**~~

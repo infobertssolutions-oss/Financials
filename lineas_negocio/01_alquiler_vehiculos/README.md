@@ -15,7 +15,7 @@ Esto ya nos dice varias cosas importantes a vigilar:
 
 ## Qué se registra aquí
 
-- `datos/inversiones_vehiculos.csv`: ficha de cada vehículo (coste, importación, matriculación, quién lo pagó). Se toca solo cuando se compra/importa/vende un vehículo.
+- `datos/vehiculos.csv`: ficha de cada vehículo (precio de compra, desde dónde se pagó, % de amortización, estado). Los gastos de importación y matriculación van como facturas recibidas con cuenta `2180`. Se toca solo cuando se compra/importa/vende un vehículo.
 - `datos/facturas_emitidas.csv` / `facturas_recibidas.csv`: cada factura de esta línea, con `linea_negocio = alquiler_vehiculos` y el `vehiculo_id` correspondiente (V1, V2, V3, V4...). No hace falta ningún fichero aparte: la rentabilidad de cada vehículo se calcula automáticamente sumando sus facturas.
 
 ## Preguntas clave que iremos respondiendo con los datos reales

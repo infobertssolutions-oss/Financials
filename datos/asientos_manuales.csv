@@ -1,0 +1,6 @@
+asiento_ref,fecha,cuenta,concepto,debe_eur,haber_eur,vehiculo_id,justificante,notas
+M001,2026-01-01,1290,Aplicacion del resultado 2025,64.88,0.00,,documentos/cuentas_anuales/2025_Cuenta-perdidas-y-ganancias-Fisama.pdf,Propuesta: 10% a reserva legal (art. 274 LSC) y el resto a remanente. Confirmar con el acta de la Junta que aprobo las cuentas 2025
+M001,2026-01-01,1120,Aplicacion del resultado 2025 - reserva legal 10%,0.00,6.49,,,
+M001,2026-01-01,1200,Aplicacion del resultado 2025 - remanente,0.00,58.39,,,
+M002,2026-01-01,2180,Reclasificacion NV200 2436KSS de Maquinaria (2130) a Elementos de transporte (2180),9192.00,0.00,V2,documentos/cuentas_anuales/2025_Balance-situacion-Fisama.pdf,Un vehiculo va en la 218 y no en la 213. Supone que el activo de Fisama es la V2
+M002,2026-01-01,2130,Reclasificacion NV200 2436KSS de Maquinaria (2130) a Elementos de transporte (2180),0.00,9192.00,V2,,

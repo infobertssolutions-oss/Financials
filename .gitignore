@@ -7,3 +7,10 @@
 # Archivos temporales del sistema
 .DS_Store
 __MACOSX/
+
+# Python
+__pycache__/
+
+# Bloqueos temporales de Excel/LibreOffice
+~$*
+.~lock.*

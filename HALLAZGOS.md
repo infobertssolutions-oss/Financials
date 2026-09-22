@@ -126,6 +126,8 @@ En los documentos no hay **ninguna factura emitida en julio, agosto ni septiembr
 
 ## 4. Cómo van las cuentas de 2026 con lo que hay documentado
 
+> **Actualización 22/09/2026:** esta sección es una primera aproximación (ingresos menos facturas). El resultado contable correcto, ya con amortización, con los gastos de importación sumados al coste de los vehículos y con la pérdida de la venta del Fiesta, está en el [Balance y la PyG](ESTADOS_FINANCIEROS.md): **−7.782,79 € a 22/09/2026**.
+
 | | Importe |
 |---|---|
 | Ingresos totales registrados | 4.217,73 € |
